@@ -1,0 +1,10 @@
+html {
+  /* This prevents padding to strech the page so there is no problem of scrollbar */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  /* vh means view-port height, so our page will be of height 100% of view-port regardless of how small our content is */
+  min-height: 100vh;
+}
