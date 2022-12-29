@@ -1,0 +1,68 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+  /* This prevents padding to strech the page so there is no problem of scrollbar */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  /* vh means view-port height, so our page will be of height 100% of view-port regardless of how small our content is */
+  min-height: 100vh;
+  /* hero pattern */
+  background-color: #e3d5ca;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236d6875' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  color: #3d405b;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(227, 213, 202, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+/* Media queries are always added at the bottom because they have to override everything else */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+}
